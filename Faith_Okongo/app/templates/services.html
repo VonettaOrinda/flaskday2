@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Our Services</h1> 
+   <p>We offer a wide range of services that include:</p>
+       {% for name in names %}
+       <li>{{name}}</li><br>
+       {% endfor %}
+   </ul>
+{% endblock body %}
